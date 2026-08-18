@@ -1,0 +1,534 @@
+body {
+  margin: 0;
+background: #FFBABA;
+  color: #171116;
+  font-family: Georgia, serif;
+}
+
+#game {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+.h2 {
+  font-size: 5px;
+
+}
+
+button {
+  padding: 20px 45px;
+  border: none;
+  background: #171116;
+  color: #f8dce8;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+.sparkles {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.ribbon {
+  font-size: 40px;
+  margin: 20px;
+}
+#story p {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+#opening {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;
+}
+
+.dots {
+  font-size: 15px;
+  letter-spacing: 5px;
+  transform: translateY(100px);
+  animation: dotsPulse 3s ease-in-out infinite;
+
+}
+
+@keyframes dotsPulse {
+  0%, 100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+#line1 {
+  opacity: 1;
+}
+.loved {
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+
+  100% {
+    color: darkred;
+  }
+}
+
+.ribbons {
+  width: 120px;
+  top: 250px;
+  left: 90px;
+  position: absolute;
+
+  animation: wiggle 2s ease-in-out infinite alternate;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-9deg);
+  }
+
+  100% {
+    transform: rotate(9deg);
+  }
+}
+.skulls {
+  position: absolute;
+  top: 500px;
+  left: 100px;
+  width: 300px;
+  
+    animation: wiggle 2s ease-in-out infinite alternate;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-7deg);
+  }
+
+  100% {
+    transform: rotate(7deg);
+
+}
+  }
+
+
+.skull {
+  position: absolute;
+  top: 500px;
+  left: -40px;
+  width: 300px;
+  
+  animation: creepIn 7s ease forwards;
+}
+
+@keyframes creepIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+
+.lace {
+  position: absolute;
+  width: 350px;
+  top: 0px;
+  left: 120px;
+}
+.quote {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  white-space: nowrap;
+
+  font-size: 10px;
+  letter-spacing: 3px;
+
+  animation: runQuote 12s linear infinite;
+}
+.rose {
+  position: absolute;
+  top: 150px;
+  width: 300px;
+  left: 129px;
+  animation: dyingRose 6s ease-in-out infinite alternate;
+}
+
+@keyframes dyingRose {
+  0% {
+    transform: rotate(-4deg);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: rotate(3deg);
+    opacity: 0.65;
+  }
+}
+
+.dead {
+  position: absolute;
+  top: 0px;
+  width: 290px;
+  left: 170px;
+}
+
+  .creeping-eyes {
+  position: absolute;
+  width: 250px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+
+  transition: opacity 2s ease;
+
+  z-index: 10;
+}
+
+.creeping-eyes.visible {
+  opacity: 1;
+}
+
+.creeping-eyes.fade-out {
+  opacity: 0;
+}
+
+.between-rose {
+  position: absolute;
+
+  width: 190px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+
+  transition: opacity 2s ease;
+
+  z-index: 11;
+
+  animation: roseSpin 8s ease-in-out infinite;
+}
+
+.between-rose.visible {
+  opacity: 1;
+}
+
+.between-rose.fade-out {
+  opacity: 0;
+}
+.why {
+  position: absolute;
+
+  left: 50%;
+  top: 72%;
+
+  transform: translateX(-50%);
+
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  letter-spacing: 5px;
+
+  opacity: 0;
+
+  transition: opacity 3s ease;
+
+  z-index: 20;
+}
+
+.why.visible {
+  opacity: 1;
+}
+
+@keyframes roseSpin {
+  0% {
+    transform: translate(-50%, -50%) rotate(-8deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(8deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(-8deg);
+  }
+}
+
+.question {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+
+  text-align: center;
+
+  font-family: Georgia, serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+
+  color: black;
+}
+#game {
+  min-height: 100vh;
+  transition: background-color 5s ease;
+}
+
+#game.blood {
+  background-color: darkred;
+}
+#game.tarot {
+  background-color: #FFBABA;
+}
+#story {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.story-text {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  width: 70%;
+  text-align: center;
+  z-index: 10;
+}
+
+.story-text p {
+  margin: 20px 0;
+  color: black;
+  font-family: cursive;
+  font-size: 20px;
+
+  opacity: 0 !important;
+  transition: opacity 1.5s ease;
+}
+
+.story-text p.show {
+  opacity: 1 !important;
+}
+.story-text p.hide {
+  opacity: 0 !important;
+  transition: opacity 2s ease;
+}
+
+
+/* INTRICATE CORNER DESIGNS */
+
+.intricate {
+  position: absolute;
+
+  width: 150px;
+
+  opacity: 0.7;
+
+  pointer-events: none;
+}
+.intricate.fade-out {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+
+/* TOP LEFT */
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+
+/* TOP RIGHT */
+
+.top-right {
+  top: 0;
+  right: 0;
+
+  transform: scaleX(-1);
+}
+
+
+/* BOTTOM LEFT */
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+
+  transform: scaleY(-1);
+}
+
+
+/* BOTTOM RIGHT */
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+
+  transform: scale(-1);
+}
+.tarot-intro {
+  position: absolute;
+
+  top: 15%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 80%;
+
+  text-align: center;
+
+  font-family: cinzel;
+  font-size: 15px;
+  letter-spacing: 0px;
+
+  color: #171116;
+
+  opacity: 0;
+  transition: opacity 2s ease;
+
+  z-index: 30;
+}
+
+.tarot-intro.visible {
+  opacity: 1;
+}
+.tarot-cards {
+  position: absolute;
+
+  left: 50%;
+  top: 45%;
+
+  transform: translate(-50%, 100px);
+
+  display: flex;
+  gap: 8px;
+
+  z-index: 25;
+
+  animation: cardsPanUp 2s ease-out forwards;
+}
+@keyframes cardsPanUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+.tarot-card {
+  width: 70px;
+  height: auto;
+animation: floatCard 4s ease-in-out infinite;
+}
+
+.tarot-card:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.tarot-card:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+.tarot-cloud {
+  position: absolute;
+  z-index: 20;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.cloud1 {
+  width: 400px;
+  left: 5%;
+  top: 25%;
+  animation: cloudDrift1 8s ease-in-out infinite alternate;
+}
+
+.cloud2 {
+  width: 400px;
+  right: 3%;
+  top: 45%;
+  animation: cloudDrift2 10s ease-in-out infinite alternate;
+}
+.cloud3 {
+  width: 400px;
+  right: 4%;
+  top: 15%;
+  animation: cloudDrift3 10s ease-in-out infinite alternate;
+}
+
+
+@keyframes cloudDrift1 {
+  from {
+    transform: translateX(-10px);
+  }
+
+  to {
+    transform: translateX(15px);
+  }
+}
+
+@keyframes cloudDrift2 {
+  from {
+    transform: translateX(12px);
+  }
+
+  to {
+    transform: translateX(-15px);
+  }
+}
+
+@keyframes cloudDrift2 {
+  from {
+    transform: translateX(12px);
+  }
+
+  to {
+    transform: translateX(-15px);
+  }
+}
