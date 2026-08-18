@@ -31,6 +31,7 @@ startButton.addEventListener("click", function () {
   opening.innerHTML = `
     <div class="dots">• • •</div>
   `;
+ 
 
   game.appendChild(opening);
 
@@ -79,4 +80,7 @@ function showStory() {
     document.getElementById("line3").classList.add("show");
   }, 5500);
 
+setTimeout(() => {
+  game.classList.add("blood");
+}, 6000);
 }
