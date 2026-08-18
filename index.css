@@ -249,7 +249,7 @@ button {
 
   transform: translateX(-50%);
 
-  color: black;
+  color: white;
   font-family: Georgia, serif;
   font-size: 10px;
   letter-spacing: 5px;
@@ -340,7 +340,7 @@ button {
 .intricate {
   position: absolute;
 
-  width: 50px;
+  width: 150px;
 
   opacity: 0.7;
 
