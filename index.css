@@ -39,11 +39,15 @@ button {
 .sparkles {
   font-size: 30px;
   margin-bottom: 20px;
+  pointer-events: none;
+
 }
 
 .ribbon {
   font-size: 40px;
   margin: 20px;
+  pointer-events: none;
+
 }
 #story p {
   opacity: 0;
@@ -101,6 +105,8 @@ button {
   position: absolute;
 
   animation: wiggle 2s ease-in-out infinite alternate;
+  pointer-events: none;
+
 }
 
 @keyframes wiggle {
@@ -119,6 +125,8 @@ button {
   width: 300px;
   
     animation: wiggle 2s ease-in-out infinite alternate;
+  pointer-events: none;
+
 }
 
 @keyframes wiggle {
@@ -140,6 +148,8 @@ button {
   width: 300px;
   
   animation: creepIn 7s ease forwards;
+  pointer-events: none;
+
 }
 
 @keyframes creepIn {
@@ -160,6 +170,8 @@ button {
   width: 350px;
   top: 0px;
   left: 120px;
+  pointer-events: none;
+
 }
 .quote {
   position: absolute;
@@ -178,6 +190,8 @@ button {
   width: 300px;
   left: 129px;
   animation: dyingRose 6s ease-in-out infinite alternate;
+  pointer-events: none;
+
 }
 
 @keyframes dyingRose {
