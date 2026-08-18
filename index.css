@@ -43,9 +43,6 @@ button {
 
 .ribbon {
   font-size: 40px;
-  margin: 20px;
-}
-#story p {
 body {
   margin: 0;
 background: #FFBABA;
@@ -409,7 +406,10 @@ button {
 
   transform: scale(-1);
 }
-￼Enter  opacity: 0;
+￼Enter  margin: 20px;
+}
+#story p {
+  opacity: 0;
   transition: opacity 1s ease;
 }
 #opening {
@@ -512,8 +512,10 @@ button {
   }
 
   to {
-    opacity: 1;
+acity: 1;
     transform: translateY(0);
+  }
+}
   
 
 .lace {
@@ -616,4 +618,3 @@ button {
     transform: translate(-50%, -50%) rotate(-8deg);
   }
 }
-
