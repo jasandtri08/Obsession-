@@ -184,7 +184,7 @@ game.appendChild(clouds);
   const choose = document.createElement("div");
 
   choose.className = "choose";
-  choose.textContent = "Choose one.";
+  choose.textContent = "Choose one... and wisely";
 
   game.appendChild(choose);
 
