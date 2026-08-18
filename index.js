@@ -4,12 +4,12 @@ game.innerHTML = `
   <div class="sparkles">✦ ✧ ✦</div>
 
   <img src="Ribbons and cherries.png" class="ribbons">
-  <img src="Skulls and love.png" class="skulls">
+  <img src="Mania/Skulls and love.png" class="skulls">
   <img src="Skulls left.png" class="skull">
   <img src="Mania/Pictureoflace.png" class="lace">
   <img src="M/Deadrose.png" class="rose">
 
-  <img src="Images22/Deadrose.png" class="dead">
+  <img src="Mania/Deadrose.png" class="dead">
 
   <h1>MANIA</h1>
 
