@@ -3,13 +3,13 @@ const game = document.getElementById("game");
 game.innerHTML = `
   <div class="sparkles">✦ ✧ ✦</div>
 
-  <img src="Images22/Ribbons and cherries.png" class="ribbons">
-  <img src="Images22/Skulls and love.png" class="skulls">
-  <img src="Images22/Skulls left.png" class="skull">
-  <img src="Images22/Pictureoflace.png" class="lace">
-  <img src="Images22/Deadrose.png" class="rose">
+  <img src="Ribbons and cherries.png" class="ribbons">
+  <img src="Skulls and love.png" class="skulls">
+  <img src="Skulls left.png" class="skull">
+  <img src="Pictureoflace.png" class="lace">
+  <img src="Deadrose.png" class="rose">
 
-  <img src="Images22/Deadrose.png" class="dead">
+  <img src="Deadrose.png" class="dead">
 
   <h1>MANIA</h1>
 
@@ -49,10 +49,10 @@ function showStory() {
   game.innerHTML = `
     <div id="story">
 
-      <img src="Images22/Intricate.png" class="intricate top-left">
-      <img src="Images22/Intricate.png" class="intricate top-right">
-      <img src="Images22/Intricate.png" class="intricate bottom-left">
-      <img src="Images22/Intricate.png" class="intricate bottom-right">
+      <img src="Intricate.png" class="intricate top-left">
+      <img src="Intricate.png" class="intricate top-right">
+      <img src="Intricate.png" class="intricate bottom-left">
+      <img src="Intricate.png" class="intricate bottom-right">
 
       <div class="story-text">
 
@@ -97,7 +97,7 @@ setTimeout(() => {
 
   const eyes = document.createElement("img");
 
-  eyes.src = "Images22/Eyes open.png";
+  eyes.src = "Eyes open.png";
   eyes.className = "creeping-eyes";
 
   game.appendChild(eyes);
@@ -107,7 +107,7 @@ setTimeout(() => {
   }, 100);
   const rose = document.createElement("img");
 
-rose.src = "Images22/Bw rose.png";
+rose.src = "Bw rose.png";
 rose.className = "between-rose";
 
 game.appendChild(rose);
@@ -161,17 +161,17 @@ setTimeout(() => {
   cards.className = "tarot-cards";
 
   cards.innerHTML = `
-    <img src="Images22/Tarot1.png" class="tarot-card">
-    <img src="Images22/Tarot2.png" class="tarot-card">
-    <img src="Images22/Tarot3.png" class="tarot-card">
+    <img src="Tarot1.png" class="tarot-card">
+    <img src="Tarot2.png" class="tarot-card">
+    <img src="Tarot3.png" class="tarot-card">
     
   `;
     const clouds = document.createElement("div");
 
 clouds.innerHTML = `
-  <img src="Images22/Cloud1.png" class="tarot-cloud cloud1">
-  <img src="Images22/Cloud2.png" class="tarot-cloud cloud2">
-  <img src="Images22/Cloud3.png" class="tarot-cloud cloud3">
+  <img src="Cloud1.png" class="tarot-cloud cloud1">
+  <img src="Cloud2.png" class="tarot-cloud cloud2">
+  <img src="Cloud3.png" class="tarot-cloud cloud3">
 `;
 
 game.appendChild(clouds);
@@ -184,10 +184,10 @@ game.appendChild(clouds);
   // 👁️ BLINK
   function blink() {
 
-    eyes.src = "Images22/Eyes closed.png";
+    eyes.src = "Eyes closed.png";
 
     setTimeout(() => {
-      eyes.src = "Images22/Eyes open.png";
+      eyes.src = "Eyes open.png";
     }, 700);
 
     const nextBlink = Math.random() * 5000 + 4000;
