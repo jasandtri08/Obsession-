@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
 background: #FFBABA;
@@ -221,25 +222,296 @@ button {
     opacity: 1;
   }
 }
-.Bw {
+.between-rose {
   position: absolute;
-  width: 300px;
-  top: 290px;
+
+  width: 170px;
 
   left: 50%;
+  top: 50%;
 
   transform: translate(-50%, -50%);
 
-  animation: roseRotate 8s ease-in-out infinite alternate;
+  opacity: 0;
+
+  transition: opacity 2s ease;
+
+  animation: roseSpin 8s ease-in-out infinite;
 }
 
-@keyframes roseRotate {
+.between-rose.visible {
+  opacity: 1;
+}
+
+@keyframes roseSpin {
   0% {
     transform: translate(-50%, -50%) rotate(-8deg);
   }
 
-  100% {
+  50% {
     transform: translate(-50%, -50%) rotate(8deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(-8deg);
+  }
+}
+
+.body {
+  margin: 0;
+background: #FFBABA;
+  color: #171116;
+  font-family: Georgia, serif;
+}
+
+#game {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+.h2 {
+  font-size: 5px;
+
+}
+
+button {
+  padding: 20px 45px;
+  border: none;
+  background: #171116;
+  color: #f8dce8;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+.sparkles {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.ribbon {
+  font-size: 40px;
+  margin: 20px;
+}
+#story p {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+#opening {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  pointer-events: none;
+}
+
+.dots {
+  font-size: 25px;
+  letter-spacing: 8px;
+  transform: translateY(100px);
+  animation: dotsPulse 3s ease-in-out infinite;
+
+}
+
+@keyframes dotsPulse {
+  0%, 100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+#line1 {
+  opacity: 1;
+}
+.loved {
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: white;
+  }
+
+  100% {
+    color: darkred;
+  }
+}
+
+.ribbons {
+  width: 120px;
+  top: 250px;
+  left: 90px;
+  position: absolute;
+
+  animation: wiggle 2s ease-in-out infinite alternate;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-9deg);
+  }
+
+  100% {
+    transform: rotate(9deg);
+  }
+}
+.skulls {
+  position: absolute;
+  top: 500px;
+  left: 100px;
+  width: 300px;
+  
+    animation: wiggle 2s ease-in-out infinite alternate;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(-7deg);
+  }
+
+  100% {
+    transform: rotate(7deg);
+
+}
+  }
+
+
+.skull {
+  position: absolute;
+  top: 500px;
+  left: -40px;
+  width: 300px;
+  
+  animation: creepIn 7s ease forwards;
+}
+
+@keyframes creepIn {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+
+.lace {
+  position: absolute;
+  width: 350px;
+  top: 0px;
+  left: 120px;
+}
+.quote {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  white-space: nowrap;
+
+  font-size: 10px;
+  letter-spacing: 3px;
+
+  animation: runQuote 12s linear infinite;
+}
+.rose {
+  position: absolute;
+  top: 150px;
+  width: 300px;
+  left: 129px;
+  animation: dyingRose 6s ease-in-out infinite alternate;
+}
+
+@keyframes dyingRose {
+  0% {
+    transform: rotate(-4deg);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: rotate(3deg);
+    opacity: 0.65;
+  }
+}
+
+.dead {
+  position: absolute;
+  top: 0px;
+  width: 290px;
+  left: 170px;
+}
+
+  .creeping-eyes {
+  position: absolute;
+  width: 250px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+  animation: eyesAppear 3s ease-in forwards;
+}
+
+@keyframes eyesAppear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.between-rose {
+  position: absolute;
+
+  width: 170px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  opacity: 0;
+
+  transition: opacity 2s ease;
+
+  animation: roseSpin 8s ease-in-out infinite;
+}
+
+.between-rose.visible {
+  opacity: 1;
+}
+
+@keyframes roseSpin {
+  0% {
+    transform: translate(-50%, -50%) rotate(-8deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(8deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(-8deg);
   }
 }
 
@@ -292,6 +564,10 @@ button {
 
 .story-text p.show {
   opacity: 1 !important;
+}
+.story-text p.hide {
+  opacity: 0 !important;
+  transition: opacity 2s ease;
 }
 
 
