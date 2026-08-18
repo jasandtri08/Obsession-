@@ -6,8 +6,8 @@ game.innerHTML = `
   <img src="Ribbons and cherries.png" class="ribbons">
   <img src="Skulls and love.png" class="skulls">
   <img src="Skulls left.png" class="skull">
-  <img src="Images22/Pictureoflace.png" class="lace">
-  <img src="Images22/Deadrose.png" class="rose">
+  <img src="Mania/Pictureoflace.png" class="lace">
+  <img src="M/Deadrose.png" class="rose">
 
   <img src="Images22/Deadrose.png" class="dead">
 
