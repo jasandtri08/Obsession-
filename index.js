@@ -31,7 +31,6 @@ startButton.addEventListener("click", function () {
   opening.innerHTML = `
     <div class="dots">• • •</div>
   `;
- 
 
   game.appendChild(opening);
 
@@ -79,8 +78,60 @@ function showStory() {
   setTimeout(() => {
     document.getElementById("line3").classList.add("show");
   }, 5500);
+  setTimeout(() => {
+
+  document.getElementById("line1").classList.add("hide");
+  document.getElementById("line2").classList.add("hide");
+  document.getElementById("line3").classList.add("hide");
+
+}, 7500);
 
 setTimeout(() => {
   game.classList.add("blood");
 }, 6000);
+// 👁️ EYES
+setTimeout(() => {
+
+  const eyes = document.createElement("img");
+
+  eyes.src = "Eyes open.png";
+  eyes.className = "creeping-eyes";
+
+  game.appendChild(eyes);
+
+  setTimeout(() => {
+    eyes.classList.add("visible");
+  }, 100);
+  const rose = document.createElement("img");
+
+rose.src = "Bw rose.png";
+rose.className = "between-rose";
+
+game.appendChild(rose);
+
+setTimeout(() => {
+  rose.classList.add("visible");
+}, 2000);
+
+
+  // 👁️ BLINK
+  function blink() {
+
+    eyes.src = "Eyes closed.png";
+
+    setTimeout(() => {
+      eyes.src = "Eyes open.png";
+    }, 700);
+
+    const nextBlink = Math.random() * 5000 + 4000;
+
+    setTimeout(blink, nextBlink);
+  }
+
+  setTimeout(blink, 3500);
+
+}, 7500);
+
+
+
 }
