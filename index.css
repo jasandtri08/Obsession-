@@ -532,3 +532,24 @@ animation: floatCard 4s ease-in-out infinite;
     transform: translateX(-15px);
   }
 }
+.choose {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 16px;
+  letter-spacing: 3px;
+
+  color: #171116;
+
+  opacity: 0;
+  transition: opacity 2s ease;
+
+  z-index: 30;
+}
+
+.choose.visible {
+  opacity: 1;
+}
