@@ -4,12 +4,12 @@ game.innerHTML = `
   <div class="sparkles">✦ ✧ ✦</div>
 
   <img src="Ribbons and cherries.png" class="ribbons">
-  <img src="Mania/Skulls and love.png" class="skulls">
+  <img src="Skulls and love.png" class="skulls">
   <img src="Skulls left.png" class="skull">
-  <img src="Mania/Pictureoflace.png" class="lace">
-  <img src="M/Deadrose.png" class="rose">
+  <img src="Pictureoflace.png" class="lace">
+  <img src="Deadrose.png" class="rose">
 
-  <img src="Mania/Deadrose.png" class="dead">
+  <img src="Deadrose.png" class="dead">
 
   <h1>MANIA</h1>
 
@@ -49,10 +49,10 @@ function showStory() {
   game.innerHTML = `
     <div id="story">
 
-      <img src="Images22/Intricate.png" class="intricate top-left">
-      <img src="Images22/Intricate.png" class="intricate top-right">
-      <img src="Images22/Intricate.png" class="intricate bottom-left">
-      <img src="Images22/Intricate.png" class="intricate bottom-right">
+      <img src="Intricate.png" class="intricate top-left">
+      <img src="Intricate.png" class="intricate top-right">
+      <img src="Intricate.png" class="intricate bottom-left">
+      <img src="Intricate.png" class="intricate bottom-right">
 
       <div class="story-text">
 
