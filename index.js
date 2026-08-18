@@ -3,9 +3,9 @@ const game = document.getElementById("game");
 game.innerHTML = `
   <div class="sparkles">✦ ✧ ✦</div>
 
-  <img src="Images22/Ribbons and cherries.png" class="ribbons">
-  <img src="Images22/Skulls and love.png" class="skulls">
-  <img src="Images22/Skulls left.png" class="skull">
+  <img src="Ribbons and cherries.png" class="ribbons">
+  <img src="Skulls and love.png" class="skulls">
+  <img src="Skulls left.png" class="skull">
   <img src="Images22/Pictureoflace.png" class="lace">
   <img src="Images22/Deadrose.png" class="rose">
 
