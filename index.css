@@ -61,8 +61,8 @@ button {
 }
 
 .dots {
-  font-size: 25px;
-  letter-spacing: 8px;
+  font-size: 15px;
+  letter-spacing: 5px;
   transform: translateY(100px);
   animation: dotsPulse 3s ease-in-out infinite;
 
@@ -239,6 +239,29 @@ button {
 }
 
 .between-rose.visible {
+  opacity: 1;
+}
+.why {
+  position: absolute;
+
+  left: 50%;
+  top: 72%;
+
+  transform: translateX(-50%);
+
+  color: black;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  letter-spacing: 5px;
+
+  opacity: 0;
+
+  transition: opacity 3s ease;
+
+  z-index: 20;
+}
+
+.why.visible {
   opacity: 1;
 }
 
