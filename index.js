@@ -179,6 +179,20 @@ game.appendChild(clouds);
   game.appendChild(cards);
 
 }, 16000);
+  setTimeout(() => {
+
+  const choose = document.createElement("div");
+
+  choose.className = "choose";
+  choose.textContent = "Choose one.";
+
+  game.appendChild(choose);
+
+  setTimeout(() => {
+    choose.classList.add("visible");
+  }, 100);
+
+}, 18000);
 
 
   // 👁️ BLINK
