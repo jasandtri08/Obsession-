@@ -112,6 +112,16 @@ game.appendChild(rose);
 setTimeout(() => {
   rose.classList.add("visible");
 }, 2000);
+  const why = document.createElement("div");
+
+why.className = "why";
+why.textContent = "why?";
+
+game.appendChild(why);
+
+setTimeout(() => {
+  why.classList.add("visible");
+}, 6000);
 
 
   // 👁️ BLINK
