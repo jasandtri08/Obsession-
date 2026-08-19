@@ -1,5 +1,7 @@
 const game = document.getElementById("game");
 
+const music = document.getElementById("music");
+
 game.innerHTML = `
   <div class="sparkles">✦ ✧ ✦</div>
 
@@ -10,6 +12,7 @@ game.innerHTML = `
   <img src="Deadrose.png" class="rose">
 
   <img src="Deadrose.png" class="dead">
+  
 
   <h1>MANIA</h1>
 
@@ -21,7 +24,11 @@ game.innerHTML = `
 `;
 
 const startButton = document.getElementById("startButton");
+
 startButton.addEventListener("click", function () {
+
+  music.volume = 0.5;
+  music.play();
 
   startButton.style.display = "none";
 
@@ -43,6 +50,8 @@ startButton.addEventListener("click", function () {
   }, 10000);
 
 });
+
+
 function showStory() {
   
 
@@ -145,7 +154,7 @@ setTimeout(() => {
   const tarotIntro = document.createElement("div");
 
   tarotIntro.className = "tarot-intro";
-  tarotIntro.textContent = "☾ There are three cards in this story ☽";
+  tarotIntro.textContent = " There are three cards in this story ";
 
   game.appendChild(tarotIntro);
 
