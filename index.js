@@ -1,4 +1,4 @@
-hereconst game = document.getElementById("game");
+const game = document.getElementById("game");
 const music = document.getElementById("music");
 
 game.innerHTML = `
