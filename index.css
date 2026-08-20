@@ -15,6 +15,25 @@ background: #FFBABA;
 
   text-align: center;
 }
+#musicButton {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 12px 25px;
+
+  background: #171116;
+  color: #f8dce8;
+
+  border: none;
+
+  font-family: Georgia, serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  z-index: 9999;
+}
 
 h1 {
   font-size: 60px;
